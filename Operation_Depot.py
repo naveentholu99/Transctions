@@ -1,5 +1,5 @@
 import psycopg2
-conn = psycopg2.connect(database="test", user="postgres", password="Unitedstates@123", host="127.0.0.1", port="5432")
+conn = psycopg2.connect(database="postgres", user="postgres", password="Unitedstates@123", host="127.0.0.1", port="5432")
 
 cur = conn.cursor()
 

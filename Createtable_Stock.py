@@ -4,7 +4,7 @@ conn = psycopg2.connect(database="postgres", user="postgres", password="Unitedst
 
 cur = conn.cursor()
 cur.execute('''CREATE TABLE STOCK
-      (PROD TEXT     references PRODUCT(PROD) ON DELETE CASCADE,
+      (PROD TEXT     references PRODUCT(PROD) ON DELETE CASCADE ON UPDATE CASCADE,
       DEP           TEXT    references DEPOT(DEP) ON DELETE CASCADE,
       QUANTITY            INT     NOT NULL
       );''')

@@ -8,10 +8,10 @@ conn.set_isolation_level(3)
 conn.autocommit = False
 #The product p1 changes its name to pp1 in Product and Stock.
 try:
-
     cur = conn.cursor()
 
     cur.execute("UPDATE PRODUCT set PROD = 'PP1' where PROD = 'P1'")
+
     conn.commit()
     print("Total number of rows updated :", cur.rowcount)
 
@@ -30,6 +30,9 @@ try:
         print("QUANTITY = ", row[2], "\n")
 
     print("Operation done successfully")
+
+
+
 
 
 except (Exception, psycopg2.DatabaseError) as err:
