@@ -1,7 +1,9 @@
 #Project
-Implementing ACID properties using CRUD Operations
+This project illustrates how to execute database transctions using python and postgres by implementing ACID properties on already existed tables in the database 
 
-import psycopg2
+
+ 
+ import psycopg2
 
 from tabulate import tabulate
 
